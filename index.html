@@ -191,6 +191,29 @@ padding:25px;
 font-size:18px;
 }
 
+.whatsapp-float{
+position:fixed;
+width:60px;
+height:60px;
+bottom:25px;
+right:25px;
+background:#25d366;
+color:white;
+border-radius:50%;
+text-align:center;
+font-size:32px;
+line-height:60px;
+text-decoration:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.3);
+z-index:1000;
+transition:0.3s;
+}
+
+.whatsapp-float:hover{
+transform:scale(1.1);
+background:#1ebe5d;
+}
+
 @media(max-width:768px){
 
 header{
@@ -348,6 +371,16 @@ Advanced Somali, English, and Arabic translation application with voice input an
 </p>
 
 </footer>
+
+<!-- WhatsApp Floating Button -->
+
+<a
+href="https://wa.me/19053299863"
+class="whatsapp-float"
+target="_blank"
+>
+💬
+</a>
 
 </body>
 </html>
