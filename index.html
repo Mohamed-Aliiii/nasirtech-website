@@ -12,6 +12,7 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+scroll-behavior:smooth;
 }
 
 body{
@@ -28,6 +29,9 @@ padding:20px 50px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+position:sticky;
+top:0;
+z-index:1000;
 }
 
 header h1{
@@ -39,14 +43,21 @@ color:white;
 text-decoration:none;
 margin-left:20px;
 font-weight:bold;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#f97316;
 }
 
 .hero{
-background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+background:
+linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
 url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
+
 background-size:cover;
 background-position:center;
-height:85vh;
+height:90vh;
 display:flex;
 justify-content:center;
 align-items:center;
@@ -60,8 +71,9 @@ max-width:800px;
 }
 
 .hero h2{
-font-size:52px;
+font-size:55px;
 margin-bottom:20px;
+line-height:1.2;
 }
 
 .hero p{
@@ -77,17 +89,23 @@ text-decoration:none;
 border-radius:5px;
 font-size:18px;
 font-weight:bold;
+transition:0.3s;
+}
+
+.hero a:hover{
+background:#ea580c;
 }
 
 .services{
-padding:80px 40px;
+padding:90px 40px;
 text-align:center;
 background:white;
 }
 
 .services h2{
-font-size:40px;
-margin-bottom:50px;
+font-size:45px;
+margin-bottom:60px;
+color:#0b132b;
 }
 
 .service-boxes{
@@ -98,14 +116,71 @@ gap:30px;
 
 .box{
 background:#f9f9f9;
-padding:30px;
+padding:35px;
 border-radius:10px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+box-shadow:0 0 10px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.box:hover{
+transform:translateY(-5px);
 }
 
 .box h3{
 margin-bottom:15px;
 color:#0b132b;
+font-size:28px;
+}
+
+.box p{
+font-size:18px;
+}
+
+.portfolio{
+padding:90px 40px;
+background:#f4f4f4;
+text-align:center;
+}
+
+.portfolio h2{
+font-size:45px;
+margin-bottom:60px;
+color:#0b132b;
+}
+
+.portfolio-items{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+}
+
+.portfolio-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.08);
+}
+
+.portfolio-box h3{
+margin-bottom:15px;
+color:#0b132b;
+}
+
+.contact{
+padding:90px 40px;
+background:white;
+text-align:center;
+}
+
+.contact h2{
+font-size:45px;
+margin-bottom:40px;
+color:#0b132b;
+}
+
+.contact p{
+font-size:20px;
+margin-bottom:15px;
 }
 
 footer{
@@ -113,6 +188,39 @@ background:#0b132b;
 color:white;
 text-align:center;
 padding:25px;
+font-size:18px;
+}
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+padding:20px;
+}
+
+nav{
+margin-top:15px;
+}
+
+nav a{
+display:inline-block;
+margin:10px;
+}
+
+.hero h2{
+font-size:38px;
+}
+
+.hero p{
+font-size:18px;
+}
+
+.services h2,
+.portfolio h2,
+.contact h2{
+font-size:35px;
+}
+
 }
 
 </style>
@@ -121,34 +229,38 @@ padding:25px;
 <body>
 
 <header>
+
 <h1>Nasir Tech</h1>
 
 <nav>
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Portfolio</a>
-<a href="#">Contact</a>
+<a href="#home">Home</a>
+<a href="#services">Services</a>
+<a href="#portfolio">Portfolio</a>
+<a href="#contact">Contact</a>
 </nav>
+
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
 <div class="hero-content">
 
-<h2>Modern Digital Solutions for Businesses and Communities</h2>
+<h2>
+Modern Digital Solutions for Businesses and Communities
+</h2>
 
 <p>
 Website Development, AI Integration, Translation Solutions,
 Business Services, and Professional Digital Support.
 </p>
 
-<a href="#">Get Started</a>
+<a href="#contact">Get Started</a>
 
 </div>
 
 </section>
 
-<section class="services">
+<section class="services" id="services">
 
 <h2>Our Services</h2>
 
@@ -183,6 +295,49 @@ Professional assistance for digital services, forms, and business operations.
 </div>
 
 </div>
+
+</section>
+
+<section class="portfolio" id="portfolio">
+
+<h2>Our Portfolio</h2>
+
+<div class="portfolio-items">
+
+<div class="portfolio-box">
+<h3>OPSEU Local 256 Website</h3>
+<p>
+Professional union and organizational website for Hamilton Paramedics.
+</p>
+</div>
+
+<div class="portfolio-box">
+<h3>Albayan Nikah Association</h3>
+<p>
+Modern Islamic marriage services website serving Ontario communities.
+</p>
+</div>
+
+<div class="portfolio-box">
+<h3>Nasir Translation App</h3>
+<p>
+AI-powered Somali, English, and Arabic translation application.
+</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>Email: alimohamedabdi92@gmail.com</p>
+
+<p>Phone: +1 (905) 329-9863</p>
+
+<p>Niagara Falls, Ontario, Canada</p>
 
 </section>
 
