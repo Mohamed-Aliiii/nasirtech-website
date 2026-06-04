@@ -76,32 +76,38 @@ color:#38bdf8;
 
 .hero{
 background:
-linear-gradient(rgba(3,12,30,0.82), rgba(3,12,30,0.82)),
-url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600&auto=format&fit=crop');
+linear-gradient(90deg, rgba(3,12,30,0.94), rgba(3,12,30,0.76), rgba(3,12,30,0.45)),
+url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
-min-height:90vh;
+min-height:88vh;
 display:flex;
-justify-content:center;
+justify-content:flex-start;
 align-items:center;
-text-align:center;
-padding:70px 8%;
+text-align:left;
+padding:90px 8%;
 color:white;
 }
 
 .hero-content{
-max-width:950px;
+max-width:780px;
 }
 
-.hero-logo{
-width:210px;
-margin-bottom:25px;
-filter:drop-shadow(0 0 14px rgba(56,189,248,0.5));
+.hero-tag{
+display:inline-block;
+background:rgba(56,189,248,0.15);
+border:1px solid rgba(56,189,248,0.45);
+color:#7dd3fc;
+padding:8px 18px;
+border-radius:50px;
+font-weight:bold;
+margin-bottom:22px;
+letter-spacing:0.5px;
 }
 
 .hero h2{
 font-size:58px;
-margin-bottom:20px;
+margin-bottom:22px;
 line-height:1.15;
 }
 
@@ -109,12 +115,13 @@ line-height:1.15;
 font-size:22px;
 margin-bottom:35px;
 color:#e5e7eb;
+max-width:720px;
 }
 
 .hero-buttons{
 display:flex;
 gap:18px;
-justify-content:center;
+justify-content:flex-start;
 flex-wrap:wrap;
 }
 
@@ -314,7 +321,7 @@ padding:55px 7% 25px;
 
 .footer-content{
 display:grid;
-grid-template-columns:2fr 1fr 1fr;
+grid-template-columns:2fr 1fr;
 gap:35px;
 margin-bottom:35px;
 }
@@ -326,16 +333,14 @@ margin-bottom:15px;
 
 .footer-logo p{
 color:#cbd5e1;
-max-width:420px;
+max-width:520px;
 }
 
-.footer-links h3,
 .footer-social h3{
 margin-bottom:15px;
 color:#38bdf8;
 }
 
-.footer-links a,
 .footer-social a{
 display:block;
 color:#cbd5e1;
@@ -344,7 +349,6 @@ margin-bottom:10px;
 transition:0.3s;
 }
 
-.footer-links a:hover,
 .footer-social a:hover{
 color:#38bdf8;
 }
@@ -394,6 +398,12 @@ display:inline-block;
 margin:8px 10px;
 }
 
+.hero{
+text-align:center;
+justify-content:center;
+padding:80px 7%;
+}
+
 .hero h2{
 font-size:40px;
 }
@@ -402,8 +412,8 @@ font-size:40px;
 font-size:18px;
 }
 
-.hero-logo{
-width:160px;
+.hero-buttons{
+justify-content:center;
 }
 
 .about{
@@ -445,7 +455,8 @@ margin:auto;
 
 <section class="hero" id="home">
 <div class="hero-content">
-<img src="Logo.PNG" alt="Nasir Tech Logo" class="hero-logo">
+
+<span class="hero-tag">Websites • AI Automation • Business Support</span>
 
 <h2>Modern Digital Solutions for Businesses and Communities</h2>
 
@@ -457,6 +468,7 @@ Helping businesses, nonprofits, and community organizations grow through modern 
 <a href="#services" class="btn-primary">Explore Our Services</a>
 <a href="#contact" class="btn-secondary">Contact Us</a>
 </div>
+
 </div>
 </section>
 
@@ -567,28 +579,20 @@ Ready to build your website, improve your digital presence, or discuss a busines
 <div class="footer-logo">
 <img src="Logo.PNG" alt="Nasir Tech Logo">
 <p>
-Nasir Tech & Financial Services provides website development, AI automation, translation support, and professional digital services for businesses and communities.
+Helping businesses, nonprofits, and community organizations grow through modern websites, AI-powered solutions, automation, translation services, and digital innovation.
 </p>
 </div>
 
 <div class="footer-social">
 <h3>Connect</h3>
 
-<a href="https://www.facebook.com/people/Nasir-Tech-Financial-Services/61590121751049/" target="_blank">
-Facebook
-</a>
+<a href="https://www.facebook.com/people/Nasir-Tech-Financial-Services/61590121751049/" target="_blank">Facebook</a>
 
-<a href="https://www.linkedin.com/in/mohamed-a-067372a8/" target="_blank">
-LinkedIn
-</a>
+<a href="https://www.linkedin.com/in/mohamed-a-067372a8/" target="_blank">LinkedIn</a>
 
-<a href="mailto:info@nasirtech.ca">
-Email
-</a>
+<a href="mailto:info@nasirtech.ca">Email</a>
 
-<a href="https://wa.me/19053299863" target="_blank">
-WhatsApp
-</a>
+<a href="https://wa.me/19053299863" target="_blank">WhatsApp</a>
 
 </div>
 </div>
