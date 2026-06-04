@@ -175,8 +175,39 @@ font-size:19px;
 color:#555;
 }
 
-.services{
+.trust{
 background:white;
+}
+
+.trust-boxes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
+text-align:center;
+}
+
+.trust-box{
+background:#f8fafc;
+padding:30px;
+border-radius:18px;
+box-shadow:0 8px 22px rgba(0,0,0,0.08);
+border-bottom:5px solid #0284c7;
+}
+
+.trust-box h3{
+font-size:32px;
+color:#0284c7;
+margin-bottom:8px;
+}
+
+.trust-box p{
+font-size:17px;
+color:#333;
+font-weight:bold;
+}
+
+.services{
+background:#eef4fb;
 }
 
 .service-boxes{
@@ -186,7 +217,7 @@ gap:30px;
 }
 
 .box{
-background:#f8fafc;
+background:white;
 padding:35px;
 border-radius:18px;
 box-shadow:0 8px 25px rgba(0,0,0,0.08);
@@ -211,7 +242,7 @@ color:#444;
 }
 
 .portfolio{
-background:#eef4fb;
+background:white;
 text-align:center;
 }
 
@@ -222,30 +253,42 @@ gap:30px;
 }
 
 .portfolio-box{
-background:white;
-padding:35px;
+background:#f8fafc;
 border-radius:18px;
 box-shadow:0 8px 25px rgba(0,0,0,0.08);
 transition:0.3s;
+overflow:hidden;
+text-align:left;
 }
 
 .portfolio-box:hover{
 transform:translateY(-7px);
 }
 
-.portfolio-box h3{
+.portfolio-box img{
+width:100%;
+height:220px;
+object-fit:cover;
+display:block;
+}
+
+.portfolio-content{
+padding:28px;
+}
+
+.portfolio-content h3{
 margin-bottom:15px;
 color:#07152f;
 font-size:24px;
 }
 
-.portfolio-box p{
+.portfolio-content p{
 color:#444;
 font-size:17px;
 }
 
 .about{
-background:white;
+background:#eef4fb;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:50px;
@@ -472,6 +515,35 @@ Helping businesses, nonprofits, and community organizations grow through modern 
 </div>
 </section>
 
+<section class="trust">
+<h2 class="section-title">Trusted by Businesses, Organizations, and Communities</h2>
+<p class="section-subtitle">
+Nasir Tech supports businesses, community organizations, and multilingual users through practical digital solutions.
+</p>
+
+<div class="trust-boxes">
+<div class="trust-box">
+<h3>10,000+</h3>
+<p>Users Worldwide</p>
+</div>
+
+<div class="trust-box">
+<h3>4+</h3>
+<p>Major Projects Completed</p>
+</div>
+
+<div class="trust-box">
+<h3>4</h3>
+<p>Languages Supported</p>
+</div>
+
+<div class="trust-box">
+<h3>Niagara</h3>
+<p>Based in Ontario, Canada</p>
+</div>
+</div>
+</section>
+
 <section class="services" id="services">
 <h2 class="section-title">Our Services</h2>
 <p class="section-subtitle">
@@ -504,30 +576,43 @@ We help businesses, organizations, and community groups build a stronger digital
 <section class="portfolio" id="portfolio">
 <h2 class="section-title">Our Portfolio</h2>
 <p class="section-subtitle">
-A selection of projects developed for community organizations, service providers, and digital innovation.
+A selection of projects developed for community organizations, restaurants, service providers, and multilingual users.
 </p>
 
 <div class="portfolio-items">
+
 <div class="portfolio-box">
+<img src="opseu.png" alt="OPSEU Local 256 Website Screenshot">
+<div class="portfolio-content">
 <h3>OPSEU Local 256 Website</h3>
-<p>Professional union website with secure member portal access, resources, event integration, and protected communications.</p>
+<p>Professional union website featuring secure member portal access, organizational resources, event integration, and protected member communications for Hamilton Paramedics.</p>
+</div>
 </div>
 
 <div class="portfolio-box">
-<h3>Albayan Nikah Association</h3>
-<p>Modern Islamic marriage services website serving Brampton, Mississauga, Toronto, Niagara Falls, and Ontario communities.</p>
-</div>
-
-<div class="portfolio-box">
-<h3>Nasir Translation App</h3>
-<p>A multilingual translation platform supporting Somali, English, and Arabic with voice input, speech transcription, and audio output capabilities. Serving a global community of more than 10,000 users worldwide.
-</p>
-</div>
-
-<div class="portfolio-box">
+<img src="suqaar.png" alt="Suqaar Pizza and Grill Website Screenshot">
+<div class="portfolio-content">
 <h3>Suqaar Pizza & Grill</h3>
-<p>Restaurant website with menu display, strong branding, mobile-friendly layout, and online ordering connection.</p>
+<p>Modern restaurant website featuring online ordering integration, responsive design, menu presentation, and branding solutions for a growing halal restaurant in Niagara Falls.</p>
 </div>
+</div>
+
+<div class="portfolio-box">
+<img src="albayan.png" alt="Albayan Nikah Association Website Screenshot">
+<div class="portfolio-content">
+<h3>Albayan Nikah Association</h3>
+<p>Professional Islamic marriage services website serving Brampton, Mississauga, Toronto, Niagara Falls, and communities across Ontario.</p>
+</div>
+</div>
+
+<div class="portfolio-box">
+<img src="nasir-translator.png" alt="Nasir Translation App Screenshot">
+<div class="portfolio-content">
+<h3>Nasir Translation App</h3>
+<p>A multilingual translation platform supporting Somali, English, and Arabic with voice input, speech transcription, and audio output capabilities. Serving a global community of more than 10,000 users worldwide.</p>
+</div>
+</div>
+
 </div>
 </section>
 
@@ -541,7 +626,7 @@ Nasir Tech & Financial Services is based in Niagara Falls, Ontario, and provides
 Our focus is simple: build clean websites, integrate useful technology, support multilingual communities, and help clients present themselves professionally online.
 </p>
 <p>
-Whether you need a business website, AI-powered support, translation assistance, or digital business services, we provide practical solutions with care and professionalism.
+Whether you need a business website, digital automation, translation assistance, or business support services, we provide practical solutions with care and professionalism.
 </p>
 </div>
 
@@ -580,7 +665,7 @@ Ready to build your website, improve your digital presence, or discuss a busines
 <div class="footer-logo">
 <img src="Logo.PNG" alt="Nasir Tech Logo">
 <p>
-Helping businesses, nonprofits, and community organizations grow through modern websites, AI-powered solutions, automation, translation services, and digital innovation.
+Helping businesses, nonprofits, and community organizations grow through modern websites, automation, translation services, and digital innovation.
 </p>
 </div>
 
