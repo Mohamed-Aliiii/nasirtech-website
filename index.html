@@ -4,12 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nasir Tech & Financial Services | Web Development, AI Automation & Translation Services</title>
+<title>Nasir Tech & Financial Services | Websites, AI Automation & Business Support in Niagara Falls</title>
 
-<meta name="description" content="Nasir Tech & Financial Services provides website development, AI automation, translation services, business support, and professional digital solutions in Niagara Falls, Ontario, and across Canada.">
-<meta name="keywords" content="Nasir Tech, Nasir Tech and Financial Services, website development Niagara Falls, AI automation, Somali translation, business support, digital services Ontario, web design Canada">
+<meta name="description" content="Nasir Tech & Financial Services provides professional website development, AI automation, translation services, business support, and digital solutions in Niagara Falls, Ontario, and across Canada.">
+<meta name="keywords" content="Nasir Tech, Nasir Tech and Financial Services, website development Niagara Falls, AI automation Niagara Falls, Somali translation, business support, web design Ontario, digital services Canada">
 <meta name="author" content="Nasir Tech & Financial Services">
 <meta name="robots" content="index, follow">
+
+<meta property="og:title" content="Nasir Tech & Financial Services">
+<meta property="og:description" content="Websites, AI automation, translation services, and business support for businesses, nonprofits, and community organizations.">
+<meta property="og:image" content="Logo.PNG">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://nasirtech.ca">
 
 <style>
 *{
@@ -76,7 +82,7 @@ color:#38bdf8;
 
 .hero{
 background:
-linear-gradient(90deg, rgba(3,12,30,0.94), rgba(3,12,30,0.76), rgba(3,12,30,0.45)),
+linear-gradient(90deg, rgba(3,12,30,0.95), rgba(3,12,30,0.80), rgba(3,12,30,0.48)),
 url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=1600&auto=format&fit=crop');
 background-size:cover;
 background-position:center;
@@ -90,7 +96,7 @@ color:white;
 }
 
 .hero-content{
-max-width:780px;
+max-width:820px;
 }
 
 .hero-tag{
@@ -115,7 +121,7 @@ line-height:1.15;
 font-size:22px;
 margin-bottom:35px;
 color:#e5e7eb;
-max-width:720px;
+max-width:760px;
 }
 
 .hero-buttons{
@@ -126,13 +132,15 @@ flex-wrap:wrap;
 }
 
 .btn-primary,
-.btn-secondary{
+.btn-secondary,
+.project-btn{
 padding:15px 35px;
 text-decoration:none;
 border-radius:50px;
 font-size:18px;
 font-weight:bold;
 transition:0.3s;
+display:inline-block;
 }
 
 .btn-primary{
@@ -285,10 +293,53 @@ font-size:24px;
 .portfolio-content p{
 color:#444;
 font-size:17px;
+margin-bottom:20px;
+}
+
+.project-btn{
+background:#0284c7;
+color:white;
+font-size:15px;
+padding:11px 24px;
+}
+
+.project-btn:hover{
+background:#0369a1;
+transform:translateY(-3px);
+}
+
+.testimonials{
+background:#eef4fb;
+}
+
+.testimonial-boxes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.testimonial{
+background:white;
+padding:32px;
+border-radius:18px;
+box-shadow:0 8px 25px rgba(0,0,0,0.08);
+border-left:5px solid #0284c7;
+}
+
+.testimonial p{
+font-size:17px;
+color:#444;
+margin-bottom:18px;
+font-style:italic;
+}
+
+.testimonial h3{
+font-size:18px;
+color:#07152f;
 }
 
 .about{
-background:#eef4fb;
+background:white;
 display:grid;
 grid-template-columns:1fr 1fr;
 gap:50px;
@@ -312,6 +363,41 @@ margin-bottom:20px;
 font-size:18px;
 color:#444;
 margin-bottom:15px;
+}
+
+.cta{
+background:#0284c7;
+color:white;
+text-align:center;
+padding:70px 7%;
+}
+
+.cta h2{
+font-size:40px;
+margin-bottom:18px;
+}
+
+.cta p{
+font-size:20px;
+max-width:750px;
+margin:0 auto 30px;
+color:#e0f2fe;
+}
+
+.cta a{
+background:white;
+color:#07152f;
+padding:15px 35px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+display:inline-block;
+transition:0.3s;
+}
+
+.cta a:hover{
+transform:translateY(-3px);
+background:#e0f2fe;
 }
 
 .contact{
@@ -473,6 +559,37 @@ text-align:center;
 margin:auto;
 }
 }
+
+@media(max-width:500px){
+.logo-area h1{
+font-size:21px;
+}
+
+.logo-area img{
+width:60px;
+}
+
+.hero h2{
+font-size:34px;
+}
+
+.section-title{
+font-size:34px;
+}
+
+.btn-primary,
+.btn-secondary{
+width:100%;
+text-align:center;
+}
+
+.whatsapp-float{
+width:55px;
+height:55px;
+line-height:55px;
+font-size:28px;
+}
+}
 </style>
 </head>
 
@@ -480,7 +597,7 @@ margin:auto;
 
 <header>
 <div class="logo-area">
-<img src="Logo.PNG" alt="Nasir Tech Logo">
+<img src="Logo.PNG" alt="Nasir Tech & Financial Services Logo">
 <div>
 <h1>Nasir Tech</h1>
 <span>& Financial Services</span>
@@ -499,32 +616,32 @@ margin:auto;
 <section class="hero" id="home">
 <div class="hero-content">
 
-<span class="hero-tag">Websites • AI Automation • Business Support</span>
+<span class="hero-tag">Websites • AI Automation • Translation • Business Support</span>
 
-<h2>Modern Digital Solutions for Businesses and Communities</h2>
+<h2>Websites, AI Automation & Business Support for Growing Organizations</h2>
 
 <p>
-Helping businesses, nonprofits, and community organizations grow through modern websites, AI-powered solutions, automation, translation services, and digital innovation.
+Nasir Tech & Financial Services helps businesses, nonprofits, restaurants, and community organizations build a stronger digital presence through professional websites, practical automation, multilingual support, and reliable business solutions.
 </p>
 
 <div class="hero-buttons">
-<a href="#services" class="btn-primary">Explore Our Services</a>
-<a href="#contact" class="btn-secondary">Contact Us</a>
+<a href="#contact" class="btn-primary">Book a Free Consultation</a>
+<a href="#portfolio" class="btn-secondary">View Our Work</a>
 </div>
 
 </div>
 </section>
 
 <section class="trust">
-<h2 class="section-title">Trusted by Businesses, Organizations, and Communities</h2>
+<h2 class="section-title">Trusted Digital Support for Businesses and Communities</h2>
 <p class="section-subtitle">
-Nasir Tech supports businesses, community organizations, and multilingual users through practical digital solutions.
+From local businesses to community organizations, Nasir Tech delivers clean, practical, and professional digital solutions.
 </p>
 
 <div class="trust-boxes">
 <div class="trust-box">
 <h3>10,000+</h3>
-<p>Users Worldwide</p>
+<p>Users Reached Through Our Translation Platform</p>
 </div>
 
 <div class="trust-box">
@@ -551,41 +668,44 @@ We help businesses, organizations, and community groups build a stronger digital
 </p>
 
 <div class="service-boxes">
+
 <div class="box">
 <h3>Website Development</h3>
-<p>Professional websites for businesses, restaurants, nonprofits, community organizations, and service providers.</p>
+<p>Professional websites for businesses, restaurants, nonprofits, community organizations, service providers, and personal brands.</p>
 </div>
 
 <div class="box">
 <h3>AI & Automation</h3>
-<p>Smart digital tools that help reduce manual work, improve operations, and support business growth.</p>
+<p>Smart digital tools that reduce repetitive work, improve operations, and help small and medium-sized businesses become more productive.</p>
 </div>
 
 <div class="box">
 <h3>Translation Services</h3>
-<p>Multilingual support in English, Somali, Swahili, and Arabic for professional and community communication.</p>
+<p>Multilingual support in English, Somali, Swahili, and Arabic for professional documents, community communication, and digital tools.</p>
 </div>
 
 <div class="box">
 <h3>Business Support</h3>
-<p>Reliable support for digital services, forms, online setup, business documentation, and administrative needs.</p>
+<p>Reliable support for online setup, digital forms, business documentation, administrative tasks, and client-facing communication.</p>
 </div>
+
 </div>
 </section>
 
 <section class="portfolio" id="portfolio">
 <h2 class="section-title">Our Portfolio</h2>
 <p class="section-subtitle">
-A selection of projects developed for community organizations, restaurants, service providers, and multilingual users.
+A selection of real projects developed for community organizations, restaurants, service providers, and multilingual users.
 </p>
 
 <div class="portfolio-items">
 
 <div class="portfolio-box">
-<img src="opseu.png" alt="OPSEU Local 256 Website Screenshot">
+<img src="opseu.png" alt="OPSEU Local 256 Hamilton Paramedics Website Screenshot">
 <div class="portfolio-content">
 <h3>OPSEU Local 256 Website</h3>
 <p>Professional union website featuring secure member portal access, organizational resources, event integration, and protected member communications for Hamilton Paramedics.</p>
+<a href="https://opseu256hamiltonparamedics.ca/" target="_blank" class="project-btn">View Project</a>
 </div>
 </div>
 
@@ -594,6 +714,7 @@ A selection of projects developed for community organizations, restaurants, serv
 <div class="portfolio-content">
 <h3>Suqaar Pizza & Grill</h3>
 <p>Modern restaurant website featuring online ordering integration, responsive design, menu presentation, and branding solutions for a growing halal restaurant in Niagara Falls.</p>
+<a href="https://suqaarpizzagrill.ca/" target="_blank" class="project-btn">View Project</a>
 </div>
 </div>
 
@@ -602,6 +723,7 @@ A selection of projects developed for community organizations, restaurants, serv
 <div class="portfolio-content">
 <h3>Albayan Nikah Association</h3>
 <p>Professional Islamic marriage services website serving Brampton, Mississauga, Toronto, Niagara Falls, and communities across Ontario.</p>
+<a href="https://albayannikah.ca/" target="_blank" class="project-btn">View Project</a>
 </div>
 </div>
 
@@ -609,8 +731,35 @@ A selection of projects developed for community organizations, restaurants, serv
 <img src="nasir-translator.png" alt="Nasir Translation App Screenshot">
 <div class="portfolio-content">
 <h3>Nasir Translation App</h3>
-<p>A multilingual translation platform supporting Somali, English, and Arabic with voice input, speech transcription, and audio output capabilities. Serving a global community of more than 10,000 users worldwide.</p>
+<p>A multilingual translation platform supporting Somali, English, and Arabic with voice input, speech transcription, and audio output capabilities.</p>
+<a href="#contact" class="project-btn">Ask About This Project</a>
 </div>
+</div>
+
+</div>
+</section>
+
+<section class="testimonials">
+<h2 class="section-title">Why Clients Work With Us</h2>
+<p class="section-subtitle">
+We focus on professionalism, clear communication, practical solutions, and long-term value.
+</p>
+
+<div class="testimonial-boxes">
+
+<div class="testimonial">
+<p>"Nasir Tech builds clean, modern websites that help organizations look professional and communicate clearly online."</p>
+<h3>Website Development</h3>
+</div>
+
+<div class="testimonial">
+<p>"Our approach is practical: we listen carefully, understand the client’s needs, and deliver solutions that are easy to use."</p>
+<h3>Client-Focused Service</h3>
+</div>
+
+<div class="testimonial">
+<p>"From community projects to business platforms, we combine digital design, automation, and multilingual support."</p>
+<h3>Digital Innovation</h3>
 </div>
 
 </div>
@@ -626,13 +775,21 @@ Nasir Tech & Financial Services is based in Niagara Falls, Ontario, and provides
 Our focus is simple: build clean websites, integrate useful technology, support multilingual communities, and help clients present themselves professionally online.
 </p>
 <p>
-Whether you need a business website, digital automation, translation assistance, or business support services, we provide practical solutions with care and professionalism.
+Whether you need a business website, digital automation, translation assistance, or business support services, we provide practical solutions with care, clarity, and professionalism.
 </p>
 </div>
 
 <div>
 <img src="Logo.PNG" alt="Nasir Tech & Financial Services Logo">
 </div>
+</section>
+
+<section class="cta">
+<h2>Ready to Build Something Professional?</h2>
+<p>
+Whether you need a website, automation tool, translation support, or a better digital presence, Nasir Tech is ready to help.
+</p>
+<a href="#contact">Start a Conversation</a>
 </section>
 
 <section class="contact" id="contact">
@@ -642,6 +799,7 @@ Ready to build your website, improve your digital presence, or discuss a busines
 </p>
 
 <div class="contact-details">
+
 <div class="contact-card">
 <h3>Email</h3>
 <p><a href="mailto:info@nasirtech.ca">info@nasirtech.ca</a></p>
@@ -656,6 +814,7 @@ Ready to build your website, improve your digital presence, or discuss a busines
 <h3>Location</h3>
 <p>Niagara Falls, Ontario, Canada</p>
 </div>
+
 </div>
 </section>
 
@@ -663,9 +822,9 @@ Ready to build your website, improve your digital presence, or discuss a busines
 <div class="footer-content">
 
 <div class="footer-logo">
-<img src="Logo.PNG" alt="Nasir Tech Logo">
+<img src="Logo.PNG" alt="Nasir Tech & Financial Services Logo">
 <p>
-Helping businesses, nonprofits, and community organizations grow through modern websites, automation, translation services, and digital innovation.
+Helping businesses, nonprofits, restaurants, and community organizations grow through modern websites, automation, translation services, and digital innovation.
 </p>
 </div>
 
@@ -688,7 +847,7 @@ Helping businesses, nonprofits, and community organizations grow through modern 
 </div>
 </footer>
 
-<a href="https://wa.me/19053299863" class="whatsapp-float" target="_blank">💬</a>
+<a href="https://wa.me/19053299863" class="whatsapp-float" target="_blank" aria-label="Chat with Nasir Tech on WhatsApp">💬</a>
 
 </body>
 </html>
