@@ -352,17 +352,13 @@ radial-gradient(circle at 20% 15%,#16a34a 0,transparent 42%),
 linear-gradient(125deg,#143c40,#07152f);
 }
 
-/* Falls View Shuttle project visual */
+/* Falls View Shuttle homepage screenshot */
 
-.shuttle-visual{
-background:
-radial-gradient(circle at 80% 20%,rgba(245,158,11,.45),transparent 42%),
-linear-gradient(125deg,#263447,#07152f);
-}
-
-.shuttle-visual span{
-font-size:clamp(24px,3vw,36px);
-letter-spacing:.07em;
+.portfolio-box img[src="fallsviewshuttle.png"]{
+width:100%;
+height:220px;
+object-fit:cover;
+object-position:center top;
 }
 
 .testimonials{background:#eef4fb}
@@ -823,17 +819,11 @@ class="project-btn">View Project</a>
 
 <article class="portfolio-box">
 
-<div class="project-visual shuttle-visual"
-role="img"
-aria-label="Falls View Shuttle airport transportation website project">
-
-<span>FALLS VIEW SHUTTLE</span>
-
-<small>
-AIRPORT TRANSPORTATION · BUSINESS WEBSITE
-</small>
-
-</div>
+<img
+src="fallsviewshuttle.png"
+alt="Falls View Shuttle Airport Transportation Website Homepage"
+loading="lazy"
+>
 
 <div class="portfolio-content">
 
